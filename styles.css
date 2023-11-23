@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root {
+  --primary-bg-color: #9989d2; 
+  --primary-text-color: #f9faf8; 
+  --secondary-text-color: #e5e7eb; 
+  --btn-bg-color: #4d3d87; 
+  --btn-text-color: #ffffff; 
+  --secondary-bg-color: #c0b7e4; 
+  --tertiary-text-color: #1f2937; 
+  --tertiary-bg-color: #e2dff2; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  min-height: 100vh;
+  background-color: var(--primary-bg-color);
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-container{
+  display:flex; 
+  justify-content: center;
+  background-color: var(--btn-bg-color); 
+  padding: 12px 12px; 
+}
+
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1100px; 
+  /* margin-top: 12px 12px; */
+}
+
+.logo{
+  font-size: 24px;
+  font-weight: bolder;
+  color: var(--primary-text-color);
+}
+
+.navigation ul {
+  list-style-type: none;
+  display: flex; 
+  gap: 20px; 
+}
+.navigation a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.hero-container{
+  display: flex; 
+  justify-content: center;
+  background-color: var(--primary-bg-color);
+  padding: 0 12px; 
+}
+
+.hero{
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  width: 1100px; 
+  
+}
+.main{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.main-text{
+  font-size: 48px;
+  font-weight: bolder;
+  color: var(--primary-text-color)
+}
+
+.secondary-text{
+  font-size: 18px;
+  color: var(--secondary-text-color); 
+}
+
+button{
+  min-width: 100px; 
+  padding: .5rem 1.75rem;
+  margin-top: 10px;
+  background-color: var(--btn-bg-color); 
+  color: var(--btn-text-color);
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  font-size: 1.01em;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease; 
+}
+/* Hover effect */
+button:hover {
+    background-color: #1e4fd9 ; /* Adjust the color on hover */
+  }
+
+  /* Additional styling for active/focused state */
+button:active,
+  &:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(56, 130, 246, 0.5); /* Add a thicker box shadow on focus */
+  }
+
+.image{
+  flex: auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px; 
+}
+
+.hero-image{
+  width: 350px; 
+  height: 350px; 
+}
+
+.info-container{
+  background-color: #c0b7e4; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px; 
+}
+
+.info{
+  width: 1100px; 
+}
+
+.info-header{
+  font-size: 36px;
+  font-weight: bolder;
+  color: var(--btn-bg-color);
+  text-align: center;
+}
+
+.image-grid{
+  display:flex; 
+  gap: 25px; 
+  justify-content: center;
+  text-align: center;
+}
+
+.info-image{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+.grid-image{
+  width: 150px; 
+  height: 150px; 
+  padding: 15px; 
+}
+.text{
+  color: #2f2057;
+}
+.quote-container{
+  display: flex; 
+  justify-content: center;
+  background-color: #e2dff2;
+  padding: 40px; 
+}
+
+.quote-div{
+  width:1100px; 
+  display: flex;
+  flex-direction: column;
+}
+
+.quote{
+  font-size: 32px;
+  font-weight: lighter;
+  font-style: italic;
+  color: #2f2057;
+  text-align: center;
+}
+
+.author{
+  align-self: flex-end;
+  font-weight: bold;
+  color: #2f2057;
+  font-size: 1.1em;
+}
+.call-to-action-container{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.cta-div{
+  width: 1100px;
+  height: 60%; 
+  background-color: #5b5dd9;
+  margin: 50px;
+  border-radius: 5px;
+  padding: 15px 35px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--primary-text-color);
+}
+
+.footer{
+  background-color: var(--btn-bg-color);
+  color: var(--primary-text-color); 
+  padding: 20px; 
+  font-size: 14px;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  font-size: 14px;
+  color: var(--primary-text-color);
+}
+
+.bold{
+  font-weight: bold;
+}
